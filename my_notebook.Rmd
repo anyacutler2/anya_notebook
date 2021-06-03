@@ -16,7 +16,8 @@ library(ggplot2)
 ggplot(records) +
  aes(x = track, y = time) +
  geom_boxplot(fill = "#0c4c8a") +
- theme_minimal()
+ theme_minimal() +
+labs(main = "Some Title")
 
 ```
 
