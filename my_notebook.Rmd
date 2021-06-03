@@ -1,0 +1,22 @@
+---
+title: "anyas_rmarkdown"
+output: html_document
+---
+```{r}
+library(tidyverse)
+
+records <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-05-25/records.csv')
+
+library(ggplot2)
+
+
+```
+
+```{r}
+ggplot(records) +
+ aes(x = track, y = time) +
+ geom_boxplot(fill = "#0c4c8a") +
+ theme_minimal()
+
+```
+
